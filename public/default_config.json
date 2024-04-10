@@ -1,0 +1,20 @@
+{
+  "version": 202404060000,
+  "feed.total": 10,
+  "feed.tabnews.com.br.lastUpdated": "rss.channel.lastBuildDate",
+  "feed.tabnews.com.br.items": "rss.channel.item",
+  "feed.tabnews.com.br.feed_source_id": "guid",
+  "feed.tabnews.com.br.title": "title",
+  "feed.tabnews.com.br.description": "description",
+  "feed.tabnews.com.br.content": "content:encoded",
+  "feed.tabnews.com.br.pubDate": "pubDate",
+  "feed.tabnews.com.br.url": "link",
+  "feed.dev.to.lastUpdated": "unavailable",
+  "feed.dev.to.items": "rss.channel.item",
+  "feed.dev.to.feed_source_id": "guid",
+  "feed.dev.to.title": "title",
+  "feed.dev.to.description": "description",
+  "feed.dev.to.content": "unavailable",
+  "feed.dev.to.pubDate": "pubDate",
+  "feed.dev.to.url": "link"
+}

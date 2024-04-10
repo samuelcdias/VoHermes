@@ -1,0 +1,135 @@
+:root{
+  --background-color: #f0f0f0;
+  --border: #cccccc;
+  --primary-color: #0070f3;
+  --primary-text: #141414;
+}
+
+/* #region Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-weight: 500;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* #endregion */
+
+.flex-row{
+  display: flex;
+  gap: 8px;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+/* #header */
+header{
+  height: 70px;
+}
+search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background-color: var(--background-color);
+  max-width: 50vw;
+}
+search:has(input:focus){
+  border-color: var(--primary-color);
+}
+search input {
+  width: 100%;
+  border: none;
+}
+search button{
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+}
+search button::before{
+  content: '🔍';
+  font-size: 16px;
+}
+/* #endregion */
+
+main{
+  height: calc(100vh - 100px);
+  --height: calc(100vh - 100px);
+}
+
+/* #region Notes */
+#notes{
+  height: 100%;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--background-color);
+}
+#note-title{
+  width: 360px;
+  height: 20px;
+  min-width: 80px;
+  min-height: 10px;
+  max-width: 100vw;
+  max-height: 20px;
+  padding: 8px;
+  border-radius: 4px;
+}
+#note{
+  width: 360px;
+  height: 100px;
+  min-width: 80px;
+  min-height: 50px;
+  max-width: 100vw;
+  max-height: var(--height);
+  padding: 8px;
+  border-radius: 4px;
+}

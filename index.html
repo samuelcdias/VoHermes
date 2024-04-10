@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VoHermes">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="icon" href="/favicon-dark.png" type="image/png">
+  <meta name="title" content="Vô Hermes- Assistente">
+  <meta property="og:title" content="Vô Hermes- Assistente">
+  <meta property="twitter:title" content="Vô Hermes- Assistente">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta property="twitter:description" content="">
+  <meta property="og:url" content="">
+  <meta property="twitter:url" content="">
+  <meta property="og:image" content="">
+  <meta property="twitter:image" content="">
+  <meta property="article:author" content="samuelcdias">
+  <meta property="article:section" content="tecnologia">
+  <meta property="og:type" content="article">
+  <title>Vô Hermes - Assistente</title>
+  <script id="theme"
+    data-nscript="beforeInteractive"> if (['auto', 'night'].includes(localStorage.getItem('colorMode'))) document.documentElement.setAttribute('data-no-flash', true)</script>
+  <link rel="stylesheet" href="/./src/styles.css">
+  <script src="/./src/register.js"></script>
+
+</head>
+
+<body>
+  <header class="flex-row">
+    <img src="/favicon-dark.png" alt="Vô Hermes">
+    <div>
+      <search>
+        <label>Pesquisar</label>
+        <input type="search" id="search" name="q" placeholder="Pesquisar..." />
+        <button type="button">Pesquisar</button>
+      </search>
+      <div>
+        <!-- TODO: select search-->
+      </div>
+    </div>
+  </header>
+  <main class="flex-column">
+    <section>
+      <details>
+        <summary>Notes</summary>
+        <div id="notes" class="flex-column">
+          <label for="note-title" style="display: none;">Título</label>
+          <input id="note-title" type="text" name="note-title" />
+          <label for="note" style="display: none;">Conteúdo</label>
+          <textarea id="note" name="note" rows="5" cols="50"></textarea>
+        </div>
+
+      </details>
+      <ul class="flex-row pagination">
+        <li>
+          <a onclick="return noteBefore()"><<</a> </li>
+        <li><a onclick="return noteNext()">>></a></li>
+      </ul>
+    </section>
+    <section>
+      <fieldset>
+        <div id="feed_sources" class="flex-column">
+          <label for="feed_souce_name" style="display: none;">Nome</label>
+          <input id="feed_souce_name" type="text" name="note-title" />
+          </section>
+      </fieldset>
+  </main>
+  <footer class="flex-row center">
+    <small>Desenvolvido por <a href="https://github.com/samuelcdias">samuelcdias</a></small>
+  </footer>
+  <script src="/./src/script.js"></script>
+
+</body>
+
+</html>
